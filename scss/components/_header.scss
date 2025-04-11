@@ -1,0 +1,25 @@
+@use "../utils/index" as *;
+
+header {
+
+   .promocional {
+      background-color: $azul;
+      padding: 10px 0;
+
+      @include flex(center, center);
+
+      p {
+         color: #FFF;
+         font-size: 14px;
+
+         .promocional__valor {
+            background-color: $roxo;
+         }
+
+         .promocional__codigo {
+            font-weight: 300;
+            
+         }
+      }
+   }
+}

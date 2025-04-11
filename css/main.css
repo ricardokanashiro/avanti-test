@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+header .promocional {
+  background-color: #005CFF;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .promocional p {
+  color: #FFF;
+  font-size: 14px;
+}
+header .promocional p .promocional__valor {
+  background-color: #6220C1;
+}
+header .promocional p .promocional__codigo {
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
