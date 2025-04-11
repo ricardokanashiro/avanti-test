@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 header .header__promocional {
   background-color: #005CFF;
-  padding: 10px 0;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,6 +10,8 @@ header .header__promocional p {
   color: #FFF;
   font-size: 14px;
   font-weight: 600;
+  text-align: center;
+  line-height: 2.4rem;
 }
 header .header__promocional p .promocional__valor {
   background-color: #6220C1;
@@ -22,7 +24,12 @@ header .header__promocional p .promocional__codigo {
 }
 header .header__search-area {
   width: 100%;
-  padding: 0 12rem;
+  padding: 0 13vw;
+}
+@media (max-width: 992px) {
+  header .header__search-area {
+    padding: 0 7vw;
+  }
 }
 header .header__search-area .search-area__primeira-linha {
   width: 100%;
@@ -30,32 +37,79 @@ header .header__search-area .search-area__primeira-linha {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 6rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__mobile-hamburguer-btn {
+  display: none;
+  padding: 0 0.5rem 0 0.2rem;
+}
+@media (max-width: 768px) {
+  header .header__search-area .search-area__primeira-linha .search-area__mobile-hamburguer-btn {
+    display: block;
+  }
+}
+header .header__search-area .search-area__primeira-linha .search-area__mobile-hamburguer-btn img {
+  height: 2.5rem;
 }
 header .header__search-area .search-area__primeira-linha .search-area__logo-search-area {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 5rem;
+}
+@media (max-width: 768px) {
+  header .header__search-area .search-area__primeira-linha .search-area__logo-search-area {
+    flex: unset;
+  }
 }
 header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__logo {
   width: 12rem;
 }
+@media (max-width: 992px) {
+  header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__logo {
+    width: 9.5rem;
+  }
+}
+@media (max-width: 768px) {
+  header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__logo {
+    width: 15rem;
+  }
+}
 header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar {
   border: 1px solid #DDDDDD;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  flex: 1;
+  max-width: 50rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar input {
-  width: 40rem;
+@media (max-width: 992px) {
+  header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar {
+    max-width: unset;
+  }
 }
-header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar button {
-  background-color: transparent;
-  cursor: pointer;
+@media (max-width: 768px) {
+  header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar {
+    display: none;
+  }
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar input {
+  flex: 1;
+  outline: none;
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar input::placeholder {
+  color: #000;
+  font-weight: 700;
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar button img {
+  height: 1.8rem;
+  margin-bottom: -0.4rem;
 }
 header .header__search-area .search-area__primeira-linha .search-area__user-area {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,20 +122,39 @@ header .header__search-area .search-area__primeira-linha .search-area__user-area
   gap: 1rem;
 }
 header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block img {
-  width: 2.3rem;
+  height: 2.8rem;
+}
+@media (max-width: 992px) {
+  header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block img {
+    height: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block {
+    display: none;
+  }
 }
 header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block .user-block__text p {
   line-height: 1.6rem;
   font-size: 1.4rem;
   font-weight: 600;
 }
+@media (max-width: 992px) {
+  header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block .user-block__text p {
+    line-height: 1.4rem;
+    font-size: 1.3rem;
+  }
+}
 header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper {
   position: relative;
-  background-color: transparent;
-  cursor: pointer;
 }
 header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper img {
-  height: 2.7rem;
+  height: 2.8rem;
+}
+@media (max-width: 992px) {
+  header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper img {
+    height: 2.4rem;
+  }
 }
 header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper .cart-wrapper__notification {
   position: absolute;
@@ -97,6 +170,15 @@ header .header__search-area .search-area__primeira-linha .search-area__user-area
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 992px) {
+  header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper .cart-wrapper__notification {
+    font-size: 1.1rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: -0.7rem;
+    right: -0.8rem;
+  }
 }
 
 * {
@@ -114,6 +196,11 @@ html {
 html, body {
   width: 100%;
   min-height: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */
