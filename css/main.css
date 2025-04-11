@@ -1,20 +1,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
-header .promocional {
+header .header__promocional {
   background-color: #005CFF;
   padding: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header .promocional p {
+header .header__promocional p {
   color: #FFF;
   font-size: 14px;
+  font-weight: 600;
 }
-header .promocional p .promocional__valor {
+header .header__promocional p .promocional__valor {
   background-color: #6220C1;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
 }
-header .promocional p .promocional__codigo {
+header .header__promocional p .promocional__codigo {
   font-weight: 300;
+}
+header .header__search-area {
+  width: 100%;
+  padding: 0 12rem;
+}
+header .header__search-area .search-area__primeira-linha {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__logo {
+  width: 12rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar {
+  border: 1px solid #DDDDDD;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar input {
+  width: 40rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__logo-search-area .logo-search-area__search-bar button {
+  background-color: transparent;
+  cursor: pointer;
+}
+header .header__search-area .search-area__primeira-linha .search-area__user-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block img {
+  width: 2.3rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__user-block .user-block__text p {
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper {
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper img {
+  height: 2.7rem;
+}
+header .header__search-area .search-area__primeira-linha .search-area__user-area .user-area__cart-wrapper .cart-wrapper__notification {
+  position: absolute;
+  top: -0.8rem;
+  right: -0.9rem;
+  background-color: #005CFF;
+  color: #FFF;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {

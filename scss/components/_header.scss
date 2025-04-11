@@ -2,7 +2,7 @@
 
 header {
 
-   .promocional {
+   .header__promocional {
       background-color: $azul;
       padding: 10px 0;
 
@@ -11,14 +11,104 @@ header {
       p {
          color: #FFF;
          font-size: 14px;
+         font-weight: 600;
 
          .promocional__valor {
             background-color: $roxo;
+            padding: .2rem .4rem;
+            border-radius: .4rem;
+            font-size: 1.2rem;
          }
 
          .promocional__codigo {
             font-weight: 300;
-            
+
+         }
+      }
+   }
+
+   .header__search-area {
+      width: 100%;
+      padding: 0 12rem;
+      
+      .search-area__primeira-linha {
+         width: 100%;
+         padding: 2rem 0;
+
+         @include flex(space-between, center);
+
+         .search-area__logo-search-area {
+            @include flex(space-between, center);
+            gap: 5rem;
+
+            .logo-search-area__logo {
+               width: 12rem;
+            }
+
+            .logo-search-area__search-bar {
+               border: 1px solid #DDDDDD;
+               border-radius: 1rem;
+               padding: 1rem 2rem;
+
+               @include flex(center, center);
+
+               input {
+                  width: 40rem;
+               }
+
+               button {
+                  background-color: transparent;
+                  cursor: pointer;
+               }
+            }
+         }
+
+         .search-area__user-area {
+            @include flex(center, center);
+            gap: 3rem;
+
+            .user-area__user-block {
+               @include flex(center, center);
+               gap: 1rem;
+
+               img {
+                  width: 2.3rem;
+               }
+
+               .user-block__text {
+
+                  p {
+                     line-height: 1.6rem;
+                     font-size: 1.4rem;
+                     font-weight: 600;
+                  }
+               }
+            }
+
+            .user-area__cart-wrapper {
+               position: relative;
+               background-color: transparent;
+               cursor: pointer;
+
+               img {
+                  height: 2.7rem;
+               }
+
+               .cart-wrapper__notification {
+                  position: absolute;
+                  top: -.8rem;
+                  right: -.9rem;
+                  background-color: $azul;
+                  color: #FFF;
+                  width: 2rem;
+                  height: 2rem;
+                  border-radius: 50%;
+                  font-size: 1.1rem;
+                  font-weight: 700;
+
+                  @include flex(center, center);
+               }
+            }
          }
       }
    }
