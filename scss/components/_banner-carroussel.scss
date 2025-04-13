@@ -1,0 +1,22 @@
+@use "../utils/index" as *;
+
+.main__banner-carroussel {
+   width: 100%;
+
+   .banner-carroussel__slide {
+      width: 100%;
+      height: 40rem;
+      background-color: #E7E7EA;
+
+      @include flex(center, center);
+      gap: 10rem;
+
+      .banner-carroussel__cadeira-img {
+         height: 100%;
+      }
+
+      .banner-carroussel__texto-img {
+         width: 40rem;
+      }
+   }
+}

@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.86.3"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.7.1"
   }
 }
