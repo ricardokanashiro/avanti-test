@@ -24,11 +24,11 @@ header .header__promocional p .promocional__codigo {
 }
 header .header__search-area {
   width: 100%;
-  padding: 0 13vw;
+  padding: 0 13vw 1rem 13vw;
 }
 @media (max-width: 992px) {
   header .header__search-area {
-    padding: 0 7vw;
+    padding: 0 7vw 2rem 7vw;
   }
 }
 header .header__search-area .search-area__primeira-linha {
@@ -38,6 +38,11 @@ header .header__search-area .search-area__primeira-linha {
   justify-content: space-between;
   align-items: center;
   gap: 6rem;
+}
+@media (max-width: 500px) {
+  header .header__search-area .search-area__primeira-linha {
+    gap: 1rem;
+  }
 }
 header .header__search-area .search-area__primeira-linha .search-area__mobile-hamburguer-btn {
   display: none;
@@ -180,6 +185,32 @@ header .header__search-area .search-area__primeira-linha .search-area__user-area
     right: -0.8rem;
   }
 }
+header .header__search-area .search-area__mobile-search {
+  border: 1px solid #DDDDDD;
+  border-radius: 0.6rem;
+  padding: 0.8rem 1.6rem;
+  flex: 1;
+  display: none;
+}
+@media (max-width: 768px) {
+  header .header__search-area .search-area__mobile-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header .header__search-area .search-area__mobile-search input {
+  flex: 1;
+  outline: none;
+}
+header .header__search-area .search-area__mobile-search input::placeholder {
+  color: #000;
+  font-weight: 700;
+}
+header .header__search-area .search-area__mobile-search button img {
+  height: 1.8rem;
+  margin-bottom: -0.4rem;
+}
 header .header__search-area .search-area__segunda-linha {
   width: 100%;
   position: relative;
@@ -235,9 +266,11 @@ header .header__search-area .search-area__segunda-linha .search-area__departamen
 header .header__search-area .search-area__segunda-linha .segunda-linha__menu-categorias {
   position: absolute;
   top: 100%;
+  z-index: 10;
   width: 100%;
   height: 36rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
