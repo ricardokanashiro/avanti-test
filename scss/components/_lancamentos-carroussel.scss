@@ -9,11 +9,11 @@
    }
 
    header {
+      margin-bottom: 4rem;
       @include flex(space-between, center);
 
       h2 {
          font-size: 2rem;
-         margin-bottom: 4rem;
       }
 
       a {

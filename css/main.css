@@ -473,13 +473,13 @@ header .header__search-area .search-area__segunda-linha .segunda-linha__menu-cat
   }
 }
 .main__lancamentos header {
+  margin-bottom: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .main__lancamentos header h2 {
   font-size: 2rem;
-  margin-bottom: 4rem;
 }
 .main__lancamentos header a {
   font-size: 1.6rem;
@@ -684,6 +684,49 @@ header .header__search-area .search-area__segunda-linha .segunda-linha__menu-cat
 }
 .main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__parcelamento-info span {
   font-weight: 700;
+}
+
+.main__banner1 {
+  padding: 0 13vw;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+@media (max-width: 768px) {
+  .main__banner1 {
+    padding: 0 7vw;
+    flex-direction: column;
+  }
+}
+.main__banner1 img {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .main__banner1 img {
+    width: 100%;
+  }
+}
+.main__banner1 .banner1__info-area {
+  flex: 1;
+}
+.main__banner1 .banner1__info-area h2 {
+  font-size: 2.5vw;
+}
+@media (max-width: 768px) {
+  .main__banner1 .banner1__info-area h2 {
+    font-size: calc(2.5vw + 1rem);
+  }
+}
+.main__banner1 .banner1__info-area p {
+  margin-top: 3rem;
+  font-size: 1.2vw;
+}
+@media (max-width: 768px) {
+  .main__banner1 .banner1__info-area p {
+    font-size: calc(1.2vw + 1rem);
+  }
 }
 
 * {
