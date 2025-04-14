@@ -1,6 +1,7 @@
 @use "./utils/variables" as *;
 @use "./components/header";
 @use "./components/banner-carroussel"; 
+@use "./components/lancamentos-carroussel";
 
 * {
    padding: 0;

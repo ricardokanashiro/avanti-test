@@ -463,6 +463,229 @@ header .header__search-area .search-area__segunda-linha .segunda-linha__menu-cat
   }
 }
 
+.main__lancamentos {
+  width: 100%;
+  padding: 6rem 13vw;
+}
+@media (max-width: 768px) {
+  .main__lancamentos {
+    padding: 6rem 7vw;
+  }
+}
+.main__lancamentos header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__lancamentos header h2 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.main__lancamentos header a {
+  font-size: 1.6rem;
+  color: #303030;
+  text-decoration: none;
+  font-weight: 700;
+}
+.main__lancamentos .embla-wrapper {
+  width: 100%;
+  position: relative;
+}
+.main__lancamentos .embla-wrapper .embla-wrapper__next-btn,
+.main__lancamentos .embla-wrapper .embla-wrapper__prev-btn {
+  top: 50%;
+  border: 2px solid #005CFF;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__lancamentos .embla-wrapper .embla-wrapper__next-btn img,
+.main__lancamentos .embla-wrapper .embla-wrapper__prev-btn img {
+  width: 2rem;
+}
+.main__lancamentos .embla-wrapper .embla-wrapper__prev-btn {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: -1;
+}
+.main__lancamentos .embla-wrapper .embla-wrapper__next-btn {
+  transform: translate(50%, -50%);
+  position: absolute;
+  right: 0;
+}
+.main__lancamentos .lancamentos__carousel {
+  width: 100%;
+  overflow: hidden;
+}
+.main__lancamentos .lancamentos__carousel .embla {
+  overflow: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.main__lancamentos .lancamentos__carousel .embla__container {
+  display: flex;
+  gap: 2rem;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide {
+  flex: 0 0 25rem;
+  min-width: 0;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #bdbdbd;
+  position: relative;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__label {
+  background-color: #00264E;
+  color: #FFF;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  width: min-content;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card img {
+  width: 100%;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__titulo {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__valores {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__valores .valores__precos-wrapper .precos-wrapper__preco-antigo {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__valores .valores__precos-wrapper .precos-wrapper__preco {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__valores .valores__desconto {
+  background-color: #5EC0BE;
+  color: #FFF;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__comprar-btn {
+  background-color: #005CFF;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__parcelamento-info {
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
+.main__lancamentos .lancamentos__carousel .embla__slide .lancamentos__produto-card .produto-card__parcelamento-info span {
+  font-weight: 700;
+}
+.main__lancamentos .lancamentos-glide-carroussel .lancamentos-glide-carroussel__arrow-btn {
+  border: 2px solid #005CFF !important;
+  border-radius: 50%;
+  padding: unset;
+  width: 3.5rem;
+  height: 3.5rem;
+  left: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__lancamentos .lancamentos-glide-carroussel .lancamentos-glide-carroussel__arrow-btn img {
+  width: 1.2rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .lancamentos-glide-carroussel__arrow-btn + .lancamentos-glide-carroussel__arrow-btn {
+  left: unset;
+  right: -2rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide {
+  flex: 0 0 25rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #bdbdbd;
+  position: relative;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__label {
+  background-color: #00264E;
+  color: #FFF;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+  width: min-content;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card img {
+  width: 100%;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__titulo {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__valores {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__valores .valores__precos-wrapper .precos-wrapper__preco-antigo {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__valores .valores__precos-wrapper .precos-wrapper__preco {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__valores .valores__desconto {
+  background-color: #5EC0BE;
+  color: #FFF;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__comprar-btn {
+  background-color: #005CFF;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__parcelamento-info {
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+}
+.main__lancamentos .lancamentos-glide-carroussel .glide__slides .lancamentos__slide .lancamentos__produto-card .produto-card__parcelamento-info span {
+  font-weight: 700;
+}
+
 * {
   padding: 0;
   margin: 0;

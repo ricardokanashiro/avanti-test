@@ -1,8 +1,8 @@
 const initBannerCarroussel = () => {
    
-   const slider = new Glide('.glide', {
+   const slider = new Glide('.banner-carroussel-glide', {
       type: 'carousel',
-      // autoplay: 4000,
+      autoplay: 4000,
       hoverpause: true,
       animationDuration: 800,
       perView: 1

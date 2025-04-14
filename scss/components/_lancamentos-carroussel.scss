@@ -1,0 +1,270 @@
+@use "../utils/index" as *;
+
+.main__lancamentos {
+   width: 100%;
+   padding: 6rem $paddingPadrao;
+
+   @include tablet-down {
+      padding: 6rem $paddingPadraoTablet;
+   }
+
+   header {
+      @include flex(space-between, center);
+
+      h2 {
+         font-size: 2rem;
+         margin-bottom: 4rem;
+      }
+
+      a {
+         font-size: 1.6rem;
+         color: #303030;
+         text-decoration: none;
+         font-weight: 700;
+      }
+   }
+
+   .embla-wrapper {
+      width: 100%;
+      position: relative;
+
+      .embla-wrapper__next-btn,
+      .embla-wrapper__prev-btn {
+         top: 50%;
+         border: 2px solid $azul;
+         border-radius: 50%;
+         width: 4rem;
+         height: 4rem;
+         z-index: 11;
+
+         @include flex(center, center);
+
+         img {
+            width: 2rem;
+         }
+      }
+
+      .embla-wrapper__prev-btn {
+         transform: translate(-50%, -50%);
+         position: absolute;
+         left: -1
+      }
+
+      .embla-wrapper__next-btn {
+         transform: translate(50%, -50%);
+         position: absolute;
+         right: 0;
+      }
+   }
+
+   .lancamentos__carousel {
+      width: 100%;
+      overflow: hidden;
+
+      .embla {
+         overflow: hidden;
+         width: 100%;
+         scroll-behavior: smooth;
+      }
+   
+      .embla__container {
+         display: flex;
+         gap: 2rem;
+      }
+   
+      .embla__slide {
+         flex: 0 0 25rem;
+         min-width: 0;
+
+         .lancamentos__produto-card {
+            width: 100%;
+            padding: 1rem;
+            border-radius: .6rem;
+            border: 1px solid #bdbdbd;
+            position: relative;
+
+            .produto-card__label {
+               background-color: $azulEscuro;
+               color: #FFF;
+               padding: .6rem;
+               border-radius: .3rem;
+               width: min-content;
+               position: absolute;
+               top: 1rem;
+               left: 1rem;
+            }
+
+            img {
+               width: 100%;
+            }
+
+            .produto-card__titulo {
+               font-size: 1.8rem;
+               font-weight: 500;
+               margin: 1rem 0;
+            }
+
+            .produto-card__valores {
+
+               @include flex(flex-start, center);
+               gap: 2rem;
+
+               .valores__precos-wrapper {
+
+                  .precos-wrapper__preco-antigo {
+                     text-decoration: line-through;
+                     font-size: 1.2rem;
+                  }
+
+                  .precos-wrapper__preco {
+                     font-size: 2.2rem;
+                     font-weight: 700;
+                  }
+               }
+
+               .valores__desconto {
+                  background-color: $ciano;
+                  color: #FFF;
+                  padding: .4rem 1rem;
+                  border-radius: .4rem;
+                  text-decoration: underline;
+                  font-size: 1.2rem;
+               }
+            }
+
+            .produto-card__comprar-btn {
+               background-color: $azul;
+               color: white;
+               text-align: center;
+               width: 100%;
+               padding: 1rem;
+               border-radius: 1rem;
+               font-size: 1.6rem;
+               font-weight: 600;
+               margin-top: 2.5rem;
+            }
+
+            .produto-card__parcelamento-info {
+               font-size: 1.4rem;
+               margin-top: .6rem;
+
+               span {
+                  font-weight: 700;
+               }
+            }
+         }
+      }
+   }
+
+   .lancamentos-glide-carroussel {
+
+      .lancamentos-glide-carroussel__arrow-btn {
+         border: 2px solid $azul !important;
+         border-radius: 50%;
+         padding: unset;
+         width: 3.5rem;
+         height: 3.5rem;
+         left: -2rem;
+
+         @include flex(center, center);
+
+         img {
+            width: 1.2rem;
+         }
+      }
+
+      .lancamentos-glide-carroussel__arrow-btn+.lancamentos-glide-carroussel__arrow-btn {
+         left: unset;
+         right: -2rem;
+      }
+
+
+
+      .glide__slides {
+         // gap: 1.4rem;
+
+         .lancamentos__slide {
+            flex: 0 0 25rem;
+
+            .lancamentos__produto-card {
+               width: 100%;
+               padding: 1rem;
+               border-radius: .6rem;
+               border: 1px solid #bdbdbd;
+               position: relative;
+
+               .produto-card__label {
+                  background-color: $azulEscuro;
+                  color: #FFF;
+                  padding: .6rem;
+                  border-radius: .3rem;
+                  width: min-content;
+                  position: absolute;
+                  top: 1rem;
+                  left: 1rem;
+               }
+
+               img {
+                  width: 100%;
+               }
+
+               .produto-card__titulo {
+                  font-size: 1.8rem;
+                  font-weight: 500;
+                  margin: 1rem 0;
+               }
+
+               .produto-card__valores {
+
+                  @include flex(flex-start, center);
+                  gap: 2rem;
+
+                  .valores__precos-wrapper {
+
+                     .precos-wrapper__preco-antigo {
+                        text-decoration: line-through;
+                        font-size: 1.2rem;
+                     }
+
+                     .precos-wrapper__preco {
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                     }
+                  }
+
+                  .valores__desconto {
+                     background-color: $ciano;
+                     color: #FFF;
+                     padding: .4rem 1rem;
+                     border-radius: .4rem;
+                     text-decoration: underline;
+                     font-size: 1.2rem;
+                  }
+               }
+
+               .produto-card__comprar-btn {
+                  background-color: $azul;
+                  color: white;
+                  text-align: center;
+                  width: 100%;
+                  padding: 1rem;
+                  border-radius: 1rem;
+                  font-size: 1.6rem;
+                  font-weight: 600;
+                  margin-top: 2.5rem;
+               }
+
+               .produto-card__parcelamento-info {
+                  font-size: 1.4rem;
+                  margin-top: .6rem;
+
+                  span {
+                     font-weight: 700;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
