@@ -694,16 +694,16 @@ header .header__search-area .search-area__segunda-linha .segunda-linha__menu-cat
   align-items: center;
   gap: 4rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .main__banner1 {
+    flex-direction: column !important;
     padding: 0 7vw;
-    flex-direction: column;
   }
 }
 .main__banner1 img {
   width: 50%;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .main__banner1 img {
     width: 100%;
   }
@@ -714,7 +714,7 @@ header .header__search-area .search-area__segunda-linha .segunda-linha__menu-cat
 .main__banner1 .banner1__info-area h2 {
   font-size: 2.5vw;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .main__banner1 .banner1__info-area h2 {
     font-size: calc(2.5vw + 1rem);
   }
@@ -723,9 +723,64 @@ header .header__search-area .search-area__segunda-linha .segunda-linha__menu-cat
   margin-top: 3rem;
   font-size: 1.2vw;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .main__banner1 .banner1__info-area p {
     font-size: calc(1.2vw + 1rem);
+  }
+}
+
+.main__banner2 {
+  background-color: #DEDEDE;
+  width: 100%;
+  padding: 2rem 13vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+@media (max-width: 992px) {
+  .main__banner2 {
+    flex-direction: column-reverse;
+    padding: 2rem 7vw;
+  }
+}
+.main__banner2 .banner2__ilustracao {
+  width: 50%;
+  flex-shrink: 0;
+}
+@media (max-width: 992px) {
+  .main__banner2 .banner2__ilustracao {
+    width: 100%;
+  }
+}
+.main__banner2 .banner2__info-area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+}
+.main__banner2 .banner2__info-area h2 {
+  display: block;
+  margin: auto;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.main__banner2 .banner2__info-area .info-area__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+}
+.main__banner2 .banner2__info-area .info-area__item img {
+  width: calc(4.5rem + 2vw);
+}
+.main__banner2 .banner2__info-area .info-area__item p {
+  font-size: 1.15vw;
+}
+@media (max-width: 992px) {
+  .main__banner2 .banner2__info-area .info-area__item p {
+    font-size: calc(1rem + 1vw);
   }
 }
 

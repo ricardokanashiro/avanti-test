@@ -1,0 +1,54 @@
+@use "../utils/index" as *;
+
+.main__banner2 {
+   background-color: $cinzaEscuro;
+   width: 100%;
+   padding: 2rem $paddingPadrao;
+
+   @include flex(center, center);
+   gap: 8rem;
+
+   @include desktop-abaixo {
+      flex-direction: column-reverse;
+      padding: 2rem $paddingPadraoTablet;
+   }
+
+   .banner2__ilustracao {
+      width: 50%;
+      flex-shrink: 0;
+
+      @include desktop-abaixo {
+         width: 100%;
+      }
+   }
+
+   .banner2__info-area {
+      @include flex(flex-start, flex-start);
+      flex-direction: column;
+      gap: 4rem;
+      
+      h2 {
+         display: block;
+         margin: auto;
+         font-size: calc(.5rem + 2rem);
+         margin-bottom: 2rem;
+      }
+      
+      .info-area__item {
+         @include flex(flex-start, center);
+         gap: 3rem;
+
+         img {
+            width: calc(4.5rem + 2vw);
+         }
+
+         p {
+            font-size: 1.15vw;
+
+            @include desktop-abaixo {
+               font-size: calc(1rem + 1vw);
+            }
+         }
+      }
+   }
+}

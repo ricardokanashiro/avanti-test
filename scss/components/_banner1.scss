@@ -7,15 +7,15 @@
    @include flex(center, center);
    gap: 4rem;
 
-   @include tablet-down {
+   @include desktop-abaixo {
+      flex-direction: column !important;
       padding: 0 $paddingPadraoTablet;
-      flex-direction: column;
    }
 
    img {
       width: 50%;
 
-      @include tablet-down {
+      @include desktop-abaixo {
          width: 100%;
       }
    }
@@ -26,7 +26,7 @@
       h2 {
          font-size: 2.5vw;
 
-         @include tablet-down {
+         @include desktop-abaixo {
             font-size: calc(2.5vw + 1rem);
          }
       }
@@ -35,7 +35,7 @@
          margin-top: 3rem;
          font-size: 1.2vw;
 
-         @include tablet-down {
+         @include desktop-abaixo {
             font-size: calc(1.2vw + 1rem);
          }
       }
