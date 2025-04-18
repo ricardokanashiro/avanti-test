@@ -1,5 +1,29 @@
 @use "../utils/index" as *;
 
 .main__banner-contato {
-   
+   background-image: url("../../assets/contato-banner-bg.svg");
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: clamp(47rem, 20vw + 20rem, 60rem);
+
+   @include flex(center, center);
+
+   @include tablet-down {
+      background-image: url("../../assets/contato-banner-bg-mobile.svg");
+   }
+
+   .banner-contato__faixa {
+      width: 100%;
+      height: 8rem;
+      background-color: $azul;
+
+      p {
+         color: #FFF;
+         font-size: 1.8rem;
+         text-align: center;
+      }
+      
+      @include flex(center, center);
+   }
 }
