@@ -1,4 +1,4 @@
-@use "./utils/variables" as *;
+@use "./utils/index" as *;
 @use "./components/index" as *;
 
 * {
@@ -21,4 +21,24 @@ html, body {
 button {
    cursor: pointer;
    background-color: transparent;
+}
+
+main.main-padrao--escondido {
+   display: none;
+}
+
+main.main-pesquisa {
+   display: none;
+   height: 60rem;
+
+   p {
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 .8rem;
+   }
+}
+
+main.main-pesquisa--ativo {
+   @include flex(center, center);
 }
