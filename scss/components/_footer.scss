@@ -1,0 +1,152 @@
+@use "../utils/index" as *;
+
+footer {
+   width: 100%;
+
+   @include flex(center, center);
+   flex-direction: column;
+
+   .footer__content {
+      width: 100%;
+      margin-bottom: 8rem;
+      @include flex(center, flex-start);
+      gap: 10rem;
+
+      @include lg-desktop-down {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 4rem;
+      }
+
+      h4, h5, p {
+         font-size: 1.5rem;
+      }
+
+      h4 {
+         margin-bottom: 1rem;
+      }
+
+      h5, p {
+         font-weight: 400;
+      }
+
+      h5 {
+         margin-top: .7rem;
+      }
+
+      a {
+         color: #303030;
+         text-decoration: none;
+      }
+
+      .content__social-area {
+
+         @include lg-desktop-down {
+            @include flex(center, center);
+            flex-direction: column;
+         }
+
+         .social-area__social-links {
+            margin-top: 2.5rem;
+
+            @include flex(flex-start, center);
+            gap: 3.5rem;
+         }
+      }
+
+      .content__info-area {
+         @include flex(flex-start, flex-start);
+         gap: 10rem;
+
+         @include lg-desktop-down {
+            display: none;
+         }
+      }
+
+      .content__mobile-accordion {
+         display: none;
+         border-top: 1px solid #DDDDDD;
+         border-bottom: 1px solid #DDDDDD;
+         width: 100%;
+         max-width: 50rem;
+
+         @include lg-desktop-down {
+            display: block;
+         }
+
+         .mobile-accordion__item +
+         .mobile-accordion__item {
+            border-top: 1px solid #DDDDDD;
+         }
+
+         .mobile-accordion__item {
+            width: 100%;
+            padding: 1rem 2rem;
+
+            header {
+               padding: 1rem 0;
+               cursor: pointer;
+               @include flex(space-between, center);
+
+               h4 {
+                  font-weight: 700;
+                  margin-bottom: 0;
+               }
+
+               img {
+                  transform: rotate(0);
+                  transition: transform 650ms ease-in-out;
+               }
+            }
+
+            .item__content {
+               max-height: 0px;
+               overflow: hidden;
+               transition: max-height 650ms ease-in-out;
+            }
+         }
+
+         .mobile-accordion__item--ativo {
+
+            header img {
+               transform: rotate(180deg);
+            }
+
+            .item__content {
+               max-height: 300px;
+            }
+         }
+      }
+   }
+   
+   .footer__pagamento-flags {
+      margin-bottom: 10rem;
+      padding: 0 2rem;
+      @include flex(center, center);
+      flex-wrap: wrap;
+      gap: 4rem;
+   }
+
+   .footer__mais-info {
+      
+      p {
+         text-align: center;
+         width: 70%;
+         font-size: 1.2rem;
+         margin: 0 auto;
+         color: #303030;
+      }
+
+      .mais-info__logos {
+         margin: 4rem 0;
+         @include flex(center, center);
+         flex-wrap: wrap;
+         gap: 3rem;
+
+         img:nth-child(3) {
+            width: 8rem;
+         }
+      }
+   }
+}

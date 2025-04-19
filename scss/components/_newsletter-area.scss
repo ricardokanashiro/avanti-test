@@ -1,0 +1,82 @@
+@use "../utils/index" as *;
+
+.main__newsletter-area {
+   margin: 8rem 0;
+
+   h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-size: calc(2rem + .5vw);
+      margin-bottom: 3rem;
+
+      span {
+         color: $azul;
+      }
+   }
+
+   form {
+      background-color: #DEDEDE;
+      padding: 7rem;
+      width: min(120rem, 90%);
+      margin: 0 auto;
+      border-radius: 1rem;
+
+      @include flex(center, center);
+      gap: 2.5rem;
+
+      @include desktop-abaixo {
+         flex-direction: column;
+         padding: 7vw;
+      }
+
+      button {
+         color: #FFF;
+         background-color: $azul;
+         padding: 1rem 1.8rem;
+         border-radius: .4rem;
+         font-size: 1.5rem;
+         font-weight: 600;
+
+         @include desktop-abaixo {
+            width: 100%;
+            padding: 1.6rem 1.8rem;
+            font-size: 1.8rem;
+         }
+      }
+
+      input[type="text"] {
+         outline: none;
+         padding: 1rem;
+         font-size: 1.4rem;
+         border-radius: .6rem;
+         width: 25rem;
+
+         @include desktop-abaixo {
+            width: 100%;
+            padding: 1.5rem;
+            font-size: 1.6rem;
+         }
+      }
+
+      label {
+         font-size: 1.4rem;
+         
+         @include flex(flex-start, center);
+         gap: .5rem;
+         
+         input {
+            height: 2rem;
+            font-size: 2rem;
+         }
+         
+         p {
+            color: #656565;
+            
+            a {
+               color: #656565;
+               font-weight: 600;
+            }
+         }
+      }
+   }
+}
