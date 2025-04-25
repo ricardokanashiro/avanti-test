@@ -1,3 +1,5 @@
+import Glide from "@glidejs/glide"
+
 const initBannerCarroussel = () => {
    
    const slider = new Glide('.banner-carroussel-glide', {
