@@ -36,7 +36,7 @@ No desenvolvimento desse teste, priorizei a fidelidade com o Figma, por se trata
 
 ## Como rodar o projeto?
 
-Para rodar o projeto, siga as instruções abaixo ou <a href="https://avanti-github-test.vercel.app/">clique aqui</a> e acesse o live preview na Vercel.
+Para rodar o projeto, siga as instruções abaixo ou <a href="https://avanti-test-nu.vercel.app/">clique aqui</a> e acesse o live preview na Vercel.
 
 ```shell
    # clone o projeto do Github:
