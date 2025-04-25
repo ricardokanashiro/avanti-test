@@ -1,7 +1,7 @@
 @use "../utils/index" as *;
 
 .main__banner-contato {
-   background-image: url("../../assets/contato-banner-bg.svg");
+   background-image: url("/assets/contato-banner-bg.svg");
    background-size: cover;
    background-position: center;
    width: 100%;
@@ -10,7 +10,7 @@
    @include flex(center, center);
 
    @include tablet-down {
-      background-image: url("../../assets/contato-banner-bg-mobile.svg");
+      background-image: url("/assets/contato-banner-bg-mobile.svg");
    }
 
    .banner-contato__faixa {
