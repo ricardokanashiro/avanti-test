@@ -3,11 +3,11 @@
 <p>Seja bem vindo recrutador, espero que goste :)</p>
 Esse projeto se baseia em um e-commerce proposto pela Avanti como primeiro projeto do teste técnico de seu processo seletivo.
 
-<img src="./assets/banner-avanti.png">
+<img src="/assets/banner-avanti.png">
 
 ## Sobre o projeto:
 
-<img src="./assets/showcase.png">
+<img src="/assets/showcase.png">
 
 O teste consistia em desenvolver um layout do Figma pré-fornecido, aplicando as funcionalidades de busca (simplificada), carrossel dos produtos e responsividade completa na página, tudo isso utilizando HTML, CSS e Javascript, podendo se utilizar de um framework CSS (usei o pré-processador SCSS) e bibliotecas para aplicação da funcionalidade do carrossel.
 
